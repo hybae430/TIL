@@ -76,7 +76,7 @@ $ git status
 - 로컬 저장소와 원격 저장소를 연결하는 일입니다.
 
 ```sh
-$ git remove add origin { github repo url }
+$ git remote add origin { github repo url }
 ```
 
 - 원격 저장소(remote)를 등록할 건데, `origin`이란 이름으로 원격 저장소를 등록하겠다는 의미입니다.
@@ -89,7 +89,7 @@ $ git remote -v
 - 등록된 원격 저장소를 삭제하려면 아래의 명령어를 참고하세요.
 
 ```sh
-$ git remot rm { 삭제하고자 하는 remote name }
+$ git remote rm { 삭제하고자 하는 remote name }
 ```
 
 ### 3. 원격 저장소에 업로드

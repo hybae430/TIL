@@ -146,3 +146,16 @@ dic1.items()		# dict_items([('서울', '02'), ('경기', '031')])
 
 ### 변경 불가능한 (`immutable`) 데이터
 
+- 숫자(Number)
+- 글자(String)
+- 참/거짓(Boolean)
+- `range()`
+- `tuple()`
+- `frozenset()`
+
+### 변경 가능한(`mutable`) 데이터
+
+- `list`
+- `dict`
+- `set`
+- 사용자가 만든 데이터 타입

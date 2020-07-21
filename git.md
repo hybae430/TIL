@@ -108,5 +108,7 @@ github나 gitlab의 repo 주소를 복사해 둔 뒤,
 $ git clone { 가져오고자 하는 repo url }
 ```
 
-
+```sh
+$ git pull origin master
+```
 

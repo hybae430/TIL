@@ -140,3 +140,9 @@ dic1.items()		# dict_items([('서울', '02'), ('경기', '031')])
 |    **set**     |   O    |    O     |    O     |   X   |          |     X      |
 | **dictionary** |   O    | O(key만) | O(key만) |   X   | O(key만) |            |
 
+## 데이터의 분류 **(중요!)**
+
+> `mutable` vs. `immutable`
+
+### 변경 불가능한 (`immutable`) 데이터
+

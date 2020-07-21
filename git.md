@@ -100,3 +100,13 @@ $ git remot rm { 삭제하고자 하는 remote name }
 $ git push origin master
 ```
 
+### 4. 원격 저장소에서 로컬로 가져오기
+
+github나 gitlab의 repo 주소를 복사해 둔 뒤,
+
+```sh
+$ git clone { 가져오고자 하는 repo url }
+```
+
+
+

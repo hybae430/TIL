@@ -38,7 +38,7 @@
 
   - ```python
     import random
-    choice = random.choic(range(1,46))
+    choice = random.choice(range(1,46))
     ```
 
 ### 1.4 이미지
@@ -67,6 +67,4 @@
 | 이름   | 성별 | 나이 |
 | ------ | ---- | ---- |
 | 배하영 | 여자 | 25   |
-
-
 

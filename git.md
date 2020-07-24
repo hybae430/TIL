@@ -47,7 +47,7 @@ $ git add {staging 할 파일}
 $ git commit -m '커밋 메세지'
 ```
 
-커밋 기록을 확인하고 싶다면 아래의 명령어를 참고하세요.
+- 커밋 기록을 확인하고 싶다면 아래의 명령어를 참고하세요.
 
 ```sh
 $ git log
@@ -65,15 +65,15 @@ $ git status
 
 ## 원격 저장소 활용하기
 
-여러 서비스 중, gitHub를 기준으로 설명합니다.
+> 여러 서비스 중, gitHub를 기준으로 설명합니다.
 
 ### 1. 준비사항
 
-- github에 회원가입 후, 빈 repo를 만들어 둡니다.
+> github에 회원가입 후, 빈 repo를 만들어 둡니다.
 
 ### 2. 원격 저장소 등록
 
-- 로컬 저장소와 원격 저장소를 연결하는 일입니다.
+> 로컬 저장소와 원격 저장소를 연결하는 일입니다.
 
 ```sh
 $ git remote add origin { github repo url }
@@ -94,7 +94,7 @@ $ git remote rm { 삭제하고자 하는 remote name }
 
 ### 3. 원격 저장소에 업로드
 
-아래의 명령어를 통해 원격 저장소에 commit된 코드를 업로드할 수 있습니다.
+> 아래의 명령어를 통해 원격 저장소에 commit된 코드를 업로드할 수 있습니다.
 
 ```sh
 $ git push origin master
@@ -102,11 +102,13 @@ $ git push origin master
 
 ### 4. 원격 저장소에서 로컬로 가져오기
 
-github나 gitlab의 repo 주소를 복사해 둔 뒤,
+> github나 gitlab의 repo 주소를 복사해 둔 뒤, 아래의 명령어를 통해 repo 파일을 로컬에 가져올 수 있습니다.
 
 ```sh
 $ git clone { 가져오고자 하는 repo url }
 ```
+
+- 수정사항을 갱신하는 명령어는 다음과 같습니다.
 
 ```sh
 $ git pull origin master

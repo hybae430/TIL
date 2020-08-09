@@ -135,20 +135,38 @@ except ValueError:
 
 ### `raise`
 
-> `raise`를 통해 예외를 강제로 발생시킬 수 있습니다.
+> `raise`를 통해 사용자가 지정한 예외를 강제로 발생시킬 수 있습니다. **(항상 발생!)**
 
 ```python
 raise NameError('이름이 없습니다.')		# 오류 발생
 
-
+def mydiv(n1, n2):
+    try:
+        n1 / n2
+        raise ValueError
+    except ZeroDivisionError:
+        print('division by zero 오류가 발생하였습니다.')
+    except TypeError:
+        print('숫자를 넣어주세요.')
+    else:
+        return n1 / n2
+    
+mydiv(1, 0)				# division by zero 오류가 발생하였습니다.
+mydiv('1', '2')			# 숫자를 넣어주세요.
+mydiv(1, 5)				# ValueError 발생 (올바른 값이어도 항상 발생)
 ```
 
 ### `assert`
 
-> **상태를 검증하는데 사용**되며 무조건 `AssertionError`가 발생합니다.
+> **상태를 검증하는데 사용**되며 검증식이 거짓일 경우 항상 `AssertionError`가 발생합니다.
 
 ```python
 # assert 뒤의 boolean이 거짓일 경우 에러 메세지 출력
-assert type(1) == int, '문자열을 입력하였습니다.'
+def mydiv2(n1, n2):
+	assert type(1) == int, '숫자가 아닙니다.'
+	print(n1 // n2, n1 % n2)
+
+mydiv2(1, 2)			# 0 1
+mydiv2('1', '2')		# AssertionError 발생
 ```
 
